@@ -146,8 +146,31 @@ p {
   justify-content: space-between;
   align-items: center;
   background: #040C19;
+    left: 50%;
+  transform: translateX(-50%);
 }
 
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 100vw;
+  background: #040C19;
+  z-index: -1;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 100vw;
+  background: #040C19;
+  z-index: -1;
+}
 .header .header-logo {
   width: 162px;
 }
