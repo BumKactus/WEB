@@ -1,3 +1,4 @@
+
 /* Подключение шрифтов */
 @font-face {
   font-family: "ManropeBold";
@@ -29,6 +30,7 @@
 body {
   background: #040C19;
   padding: 0 2rem;
+  overflow-x: hidden
 }
 
 .page {
@@ -146,7 +148,7 @@ p {
   justify-content: space-between;
   align-items: center;
   background: #040C19;
-  left: 50%;
+    left: 50%;
   transform: translateX(-50%);
 }
 
@@ -386,6 +388,7 @@ p {
   color: #81afdd;
 }
 
+/* наше переделаь! */
 /*my apps с женщиной*/
 .my-apps .container{
     margin-top: 200px;
@@ -534,7 +537,7 @@ button.cta-start:hover{
     color: transparent;              
     text-align: left;                
     white-space: nowrap;
-    margin-left: 25px;
+    margin-left: 35px;
 }
 .blog-grid {
     width: 1226px;
@@ -685,9 +688,19 @@ button.cta-start:hover{
 }
 /* Секция "Будущее" */
 /* Основной цветной блок */
+
+
 .section-future.section {
-    /* тут надо что то сдлеать */
-}
+    position: static; /* Убираем абсолютное позиционирование */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    max-width: none;
+    background: #031B34;
+    padding-top: 196px;
+    padding-bottom: 103px;
+    box-sizing: border-box;
+} 
 /* Обертка для контента с отступом от верха цветного блока */
 .section-future-content {
     max-width: 1100px;
@@ -842,11 +855,3 @@ footer{
 }
 
 
-
-/* Медиа запросы для адаптива */
-
-@media screen and (max-width: 1024px) {
-  .header {
-    flex-direction: column;
-  }
-}
