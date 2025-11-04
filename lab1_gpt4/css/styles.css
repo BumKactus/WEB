@@ -686,7 +686,13 @@ button.cta-start:hover{
 /* Секция "Будущее" */
 /* Основной цветной блок */
 .section-future.section {
-    /* тут надо что то сдлеать */
+      margin-left: -2rem; 
+    margin-right: -2rem; 
+    max-width: none;     
+    background: #031B34;
+    padding-top: 196px;
+    padding-bottom: 103px;
+    box-sizing: border-box;
 }
 /* Обертка для контента с отступом от верха цветного блока */
 .section-future-content {
