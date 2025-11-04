@@ -146,6 +146,30 @@ p {
   justify-content: space-between;
   align-items: center;
   background: #040C19;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 100vw;
+  background: #040C19;
+  z-index: -1;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 100vw;
+  background: #040C19;
+  z-index: -1;
 }
 
 .header .header-logo {
@@ -362,7 +386,6 @@ p {
   color: #81afdd;
 }
 
-/* наше переделаь! */
 /*my apps с женщиной*/
 .my-apps .container{
     margin-top: 200px;
@@ -662,19 +685,9 @@ button.cta-start:hover{
 }
 /* Секция "Будущее" */
 /* Основной цветной блок */
-
-
-.section-future {
-    margin-left: -2rem; 
-    margin-right: -2rem; 
-    max-width: none;     
-    background: #031B34;
-    padding-top: 196px;
-    padding-bottom: 103px;
-    box-sizing: border-box;
-    
+.section-future.section {
+    /* тут надо что то сдлеать */
 }
-
 /* Обертка для контента с отступом от верха цветного блока */
 .section-future-content {
     max-width: 1100px;
